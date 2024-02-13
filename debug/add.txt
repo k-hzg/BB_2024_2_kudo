@@ -1,0 +1,24 @@
+begin b1
+    var n;
+    var i;
+    proc p1 add() is 
+        begin b2
+            while (100>n) do
+                if (i>n) then
+                    i=i-3
+                else
+                    if (n>i) then
+                        i=i*2
+                    else
+                        n=100
+                    fi
+                fi
+            od
+        end
+    end
+    n=50;
+    i=1;
+    call c1 add()
+    remove i;
+    remove n;
+end

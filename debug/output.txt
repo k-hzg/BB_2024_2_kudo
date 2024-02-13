@@ -1,0 +1,911 @@
+~~~~~~~~Process0 execute~~~~~~~~
+path : E
+pc = 1   command =    block:13    operand = 1
+executing stack:       []
+shared variable stack: []
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.E
+pc = 2   command =    alloc:9    operand = 0
+executing stack:       []
+shared variable stack: [0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.E
+pc = 3   command =    alloc:9    operand = 1
+executing stack:       []
+shared variable stack: [0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.E
+pc = 4   command =    alloc:9    operand = 2
+executing stack:       []
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.E
+pc = 5   command =      jmp:5    operand = 66
+executing stack:       []
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.E
+pc = 66   command =    label:7    operand = 80
+executing stack:       []
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.E
+pc = 67   command =    ipush:1    operand = 3
+executing stack:       [3]
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.E
+pc = 68   command =    store:3    operand = 0
+executing stack:       []
+shared variable stack: [3, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.E
+pc = 69   command =    ipush:1    operand = 1
+executing stack:       [1]
+shared variable stack: [3, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.E
+pc = 70   command =    store:3    operand = 1
+executing stack:       []
+shared variable stack: [3, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.E
+pc = 71   command =    ipush:1    operand = 1
+executing stack:       [1]
+shared variable stack: [3, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.E
+pc = 72   command =    store:3    operand = 2
+executing stack:       []
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.E
+pc = 73   command =    block:13    operand = 1
+executing stack:       []
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.b1.E
+pc = 74   command =      jmp:5    operand = 6
+executing stack:       []
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.b1.E
+pc = 6   command =     proc:11    operand = 1
+executing stack:       [74]
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : p1.b1.b1.E
+pc = 7   command =     fork:15    operand = 1
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : p1.b1.b1.E
+pc = 9   command =    block:13    operand = 2
+executing stack:       [74]
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 10   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 11   command =     load:2    operand = 1
+executing stack:       [74, 1]
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 12   command =    ipush:1    operand = 1
+executing stack:       [74, 1, 1]
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 13   command =       op:6    operand = 4
+executing stack:       [74, 1]
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 14   command =      jpc:4    operand = 16
+executing stack:       [74]
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 16   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 17   command =     load:2    operand = 0
+executing stack:       [74, 3]
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 18   command =    ipush:1    operand = 0
+executing stack:       [74, 3, 0]
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 19   command =       op:6    operand = 3
+executing stack:       [74, 1]
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 20   command =      jpc:4    operand = 22
+executing stack:       [74]
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 22   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 23   command =     load:2    operand = 0
+executing stack:       [74, 3]
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 24   command =    ipush:1    operand = 1
+executing stack:       [74, 3, 1]
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 25   command =       op:6    operand = 2
+executing stack:       [74, 2]
+shared variable stack: [3, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 26   command =    store:3    operand = 0
+executing stack:       [74]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 27   command =      jmp:5    operand = 31
+executing stack:       [74]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 31   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 32   command =      jmp:5    operand = 10
+executing stack:       [74]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 10   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 11   command =     load:2    operand = 1
+executing stack:       [74, 1]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 12   command =    ipush:1    operand = 1
+executing stack:       [74, 1, 1]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 13   command =       op:6    operand = 4
+executing stack:       [74, 1]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 14   command =      jpc:4    operand = 16
+executing stack:       [74]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 16   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 17   command =     load:2    operand = 0
+executing stack:       [74, 2]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 18   command =    ipush:1    operand = 0
+executing stack:       [74, 2, 0]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 19   command =       op:6    operand = 3
+executing stack:       [74, 1]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 20   command =      jpc:4    operand = 22
+executing stack:       [74]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 22   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 23   command =     load:2    operand = 0
+executing stack:       [74, 2]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 24   command =    ipush:1    operand = 1
+executing stack:       [74, 2, 1]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 25   command =       op:6    operand = 2
+executing stack:       [74, 1]
+shared variable stack: [2, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 26   command =    store:3    operand = 0
+executing stack:       [74]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 27   command =      jmp:5    operand = 31
+executing stack:       [74]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 31   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 32   command =      jmp:5    operand = 10
+executing stack:       [74]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 10   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 11   command =     load:2    operand = 1
+executing stack:       [74, 1]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 12   command =    ipush:1    operand = 1
+executing stack:       [74, 1, 1]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 13   command =       op:6    operand = 4
+executing stack:       [74, 1]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 14   command =      jpc:4    operand = 16
+executing stack:       [74]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 16   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 17   command =     load:2    operand = 0
+executing stack:       [74, 1]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 18   command =    ipush:1    operand = 0
+executing stack:       [74, 1, 0]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 19   command =       op:6    operand = 3
+executing stack:       [74, 1]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 20   command =      jpc:4    operand = 22
+executing stack:       [74]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 22   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 23   command =     load:2    operand = 0
+executing stack:       [74, 1]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 24   command =    ipush:1    operand = 1
+executing stack:       [74, 1, 1]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 25   command =       op:6    operand = 2
+executing stack:       [74, 0]
+shared variable stack: [1, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 26   command =    store:3    operand = 0
+executing stack:       [74]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 27   command =      jmp:5    operand = 31
+executing stack:       [74]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 31   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 32   command =      jmp:5    operand = 10
+executing stack:       [74]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 10   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 11   command =     load:2    operand = 1
+executing stack:       [74, 1]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 12   command =    ipush:1    operand = 1
+executing stack:       [74, 1, 1]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : p1.b1.b1.E
+pc = 37   command =    block:13    operand = 3
+executing stack:       [74]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 38   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 39   command =     load:2    operand = 2
+executing stack:       [74, 1]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 40   command =    ipush:1    operand = 1
+executing stack:       [74, 1, 1]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 41   command =       op:6    operand = 4
+executing stack:       [74, 1]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 42   command =      jpc:4    operand = 44
+executing stack:       [74]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 44   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 45   command =     load:2    operand = 0
+executing stack:       [74, 0]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 46   command =    ipush:1    operand = 0
+executing stack:       [74, 0, 0]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 47   command =       op:6    operand = 3
+executing stack:       [74, 0]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 48   command =      jpc:4    operand = 50
+executing stack:       [74]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 49   command =      jmp:5    operand = 56
+executing stack:       [74]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 56   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 57   command =    ipush:1    operand = 0
+executing stack:       [74, 0]
+shared variable stack: [0, 1, 1]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 58   command =    store:3    operand = 2
+executing stack:       [74]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 59   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 60   command =      jmp:5    operand = 38
+executing stack:       [74]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 38   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 39   command =     load:2    operand = 2
+executing stack:       [74, 0]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 40   command =    ipush:1    operand = 1
+executing stack:       [74, 0, 1]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 41   command =       op:6    operand = 4
+executing stack:       [74, 0]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 42   command =      jpc:4    operand = 44
+executing stack:       [74]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 43   command =      jmp:5    operand = 61
+executing stack:       [74]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 61   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : b3.p1.b1.b1.E
+pc = 62   command =      end:14    operand = 3
+executing stack:       [74]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.2 execute~~~~~~~~
+path : p1.b1.b1.E
+pc = 63   command =      par:8    operand = 1
+executing stack:       [74]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 13   command =       op:6    operand = 4
+executing stack:       [74, 1]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 14   command =      jpc:4    operand = 16
+executing stack:       [74]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 16   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 17   command =     load:2    operand = 0
+executing stack:       [74, 0]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 18   command =    ipush:1    operand = 0
+executing stack:       [74, 0, 0]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 19   command =       op:6    operand = 3
+executing stack:       [74, 0]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 20   command =      jpc:4    operand = 22
+executing stack:       [74]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 21   command =      jmp:5    operand = 28
+executing stack:       [74]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 28   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 29   command =    ipush:1    operand = 0
+executing stack:       [74, 0]
+shared variable stack: [0, 1, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 30   command =    store:3    operand = 1
+executing stack:       [74]
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 31   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 32   command =      jmp:5    operand = 10
+executing stack:       [74]
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 10   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 11   command =     load:2    operand = 1
+executing stack:       [74, 0]
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 12   command =    ipush:1    operand = 1
+executing stack:       [74, 0, 1]
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 13   command =       op:6    operand = 4
+executing stack:       [74, 0]
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 14   command =      jpc:4    operand = 16
+executing stack:       [74]
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 15   command =      jmp:5    operand = 33
+executing stack:       [74]
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 33   command =    label:7    operand = 80
+executing stack:       [74]
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : b2.p1.b1.b1.E
+pc = 34   command =      end:14    operand = 2
+executing stack:       [74]
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0.1 execute~~~~~~~~
+path : p1.b1.b1.E
+pc = 35   command =      par:8    operand = 1
+executing stack:       [74]
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+---fork end--- (process 0)
+executing stack:       [74]
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : p1.b1.b1.E
+pc = 64   command =    merge:16    operand = 1
+executing stack:       [74]
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : p1.b1.b1.E
+pc = 65   command = p_return:12    operand = 1
+executing stack:       []
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.b1.E
+pc = 75   command =    label:7    operand = 80
+executing stack:       []
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.b1.E
+pc = 76   command =      end:14    operand = 1
+executing stack:       []
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.E
+pc = 77   command =     free:10    operand = 2
+executing stack:       []
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.E
+pc = 78   command =     free:10    operand = 1
+executing stack:       []
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.E
+pc = 79   command =     free:10    operand = 0
+executing stack:       []
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~Process0 execute~~~~~~~~
+path : b1.E
+pc = 80   command =      end:14    operand = 1
+executing stack:       []
+shared variable stack: [0, 0, 0]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
